@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "find ./tests -name '*_test.js' | xargs mocha -R spec"
+        "test": "find ./ -name '*.test.js' | xargs mocha -R spec"
     },
     "repository": {
         "type": "git",
