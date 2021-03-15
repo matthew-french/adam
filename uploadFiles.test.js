@@ -1,6 +1,4 @@
-const proxyquire = require("proxyquire");
-const { stub } = require("sinon");
-const { expect, assert, AssertionError } = require("chai");
+const { expect } = require("chai");
 
 const { uploadFile } = require("./upload");
 
