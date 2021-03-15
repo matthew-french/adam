@@ -1,0 +1,107 @@
+{
+    "extends": [
+        "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "rules": {
+        "no-explicit-any": 0,
+        "camelcase": "error",
+        "capitalized-comments": [
+            "off",
+            "always"
+        ],
+        "curly": "error",
+        "dot-notation": "off",
+        "eol-last": "error",
+        "eqeqeq": [
+            "error",
+            "smart"
+        ],
+        "guard-for-in": "error",
+        "id-blacklist": [
+            "error",
+            "any",
+            "Number",
+            "number",
+            "String",
+            "string",
+            "Boolean",
+            "boolean",
+            "Undefined"
+        ],
+        "id-match": "error",
+        "max-len": [
+            "off",
+            {
+                "code": 140
+            }
+        ],
+        "new-parens": "error",
+        "no-bitwise": "off",
+        "no-caller": "error",
+        "no-console": [
+            "error",
+            {
+                "allow": [
+                    "log",
+                    "dirxml",
+                    "warn",
+                    "error",
+                    "dir",
+                    "timeLog",
+                    "assert",
+                    "clear",
+                    "count",
+                    "countReset",
+                    "group",
+                    "groupCollapsed",
+                    "groupEnd",
+                    "table",
+                    "Console",
+                    "markTimeline",
+                    "profile",
+                    "profileEnd",
+                    "timeline",
+                    "timelineEnd",
+                    "timeStamp",
+                    "context"
+                ]
+            }
+        ],
+        "no-debugger": "error",
+        "no-empty": "off",
+        "no-eval": "error",
+        "no-fallthrough": "error",
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 1
+            }
+        ],
+        "no-new-wrappers": "error",
+        "no-redeclare": "error",
+        "no-shadow": [
+            "error",
+            {
+                "hoist": "all"
+            }
+        ],
+        "no-trailing-spaces": "off",
+        "no-unused-expressions": "error",
+        "no-unused-labels": "error",
+        "no-var": "error",
+        "prefer-const": "error",
+        "spaced-comment": "off"
+    }
+}
