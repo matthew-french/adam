@@ -3,24 +3,29 @@ const { stub } = require("sinon");
 const { expect, assert, AssertionError } = require("chai");
 
 const { upload } = require("./upload");
-describe("upload", async () => {
-    const promise = await upload({
-        id: 1,
-        path: "image/test1.png",
+
+describe("upload", () => {
+    it("Should reject file 1 with string 'Rejected'.", async () => {
+        try {
+            const promise1 = await upload({
+                id: 1,
+                path: "image/test1.png",
+            });
+        } catch (error) {
+            expect(error).to.equal("Rejected");
+        }
     });
 
-    console.log(promise);
+    it("Should return file 2 with string 'www.s3.com/2'.", async () => {
+        try {
+            const promise2 = await upload({
+                id: 2,
+                path: "image/test2.png",
+            });
 
-    it("Should do something", () => {
-        expect(promises).to.be.an("array");
-    });
-
-    const promise2 = await upload({
-        id: 2,
-        path: "image/test2.png",
-    });
-
-    it("Something else", () => {
-        expect(promises2).to.be.an("array");
+            expect(promise2).to.equal("www.s3.com/2");
+        } catch (error) {
+            expect(error).to.equal("Rejected");
+        }
     });
 });
